@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Escritorio\\Universidad\\Informatica\\ProyectoTecnologiaInformatica\\ProyectoTecnologiaInformatica\\ProyectoTecnologiaInformatica.csproj": {}
+    "D:\\Escritorio\\Universidad\\Informatica\\ProyectoTeconologiaInformatica\\ProyectoTecnologiaInformatica\\ProyectoTecnologiaInformatica\\ProyectoTecnologiaInformatica.csproj": {}
   },
   "projects": {
-    "D:\\Escritorio\\Universidad\\Informatica\\ProyectoTecnologiaInformatica\\ProyectoTecnologiaInformatica\\ProyectoTecnologiaInformatica.csproj": {
+    "D:\\Escritorio\\Universidad\\Informatica\\ProyectoTeconologiaInformatica\\ProyectoTecnologiaInformatica\\ProyectoTecnologiaInformatica\\ProyectoTecnologiaInformatica.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Escritorio\\Universidad\\Informatica\\ProyectoTecnologiaInformatica\\ProyectoTecnologiaInformatica\\ProyectoTecnologiaInformatica.csproj",
+        "projectUniqueName": "D:\\Escritorio\\Universidad\\Informatica\\ProyectoTeconologiaInformatica\\ProyectoTecnologiaInformatica\\ProyectoTecnologiaInformatica\\ProyectoTecnologiaInformatica.csproj",
         "projectName": "ProyectoTecnologiaInformatica",
-        "projectPath": "D:\\Escritorio\\Universidad\\Informatica\\ProyectoTecnologiaInformatica\\ProyectoTecnologiaInformatica\\ProyectoTecnologiaInformatica.csproj",
+        "projectPath": "D:\\Escritorio\\Universidad\\Informatica\\ProyectoTeconologiaInformatica\\ProyectoTecnologiaInformatica\\ProyectoTecnologiaInformatica\\ProyectoTecnologiaInformatica.csproj",
         "packagesPath": "C:\\Users\\Cesar\\.nuget\\packages\\",
-        "outputPath": "D:\\Escritorio\\Universidad\\Informatica\\ProyectoTecnologiaInformatica\\ProyectoTecnologiaInformatica\\obj\\",
+        "outputPath": "D:\\Escritorio\\Universidad\\Informatica\\ProyectoTeconologiaInformatica\\ProyectoTecnologiaInformatica\\ProyectoTecnologiaInformatica\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
