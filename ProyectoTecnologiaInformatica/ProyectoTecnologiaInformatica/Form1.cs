@@ -52,25 +52,27 @@ namespace ProyectoTecnologiaInformatica
             btnRegresar.Visible = !btnRegresar.Visible;
             lblEligeJuego.Visible = !lblEligeJuego.Visible;
             pantallaJuego = !pantallaJuego;
+
+            pbLogo.Visible = !pbLogo.Visible;
             pbLogo.BackColor = Color.Purple;
             pbLogo.Location = new Point(280, 10);
-            pbLogo.ClientSize = new Size(210, 104);
-            pbMemo.Visible = true;
-            pbDonde.Visible = true;
-            pbAqui.Visible = true;
+            pbLogo.ClientSize = new Size(210, 104);            
+            
+            pbMemo.Visible = !pbMemo.Visible;
+            pbDonde.Visible = !pbDonde.Visible;
+            pbAqui.Visible = !pbAqui.Visible;
         }
 
         public void CambiaVisibleInicio()
         {
             btnInicio.Visible = !btnInicio.Visible;
             btnAyuda.Visible = !btnAyuda.Visible;
-            pbMemo.Visible = !pbMemo.Visible;
-            pbDonde.Visible = !pbDonde.Visible;
-            pbAqui.Visible = !pbAqui.Visible;
             this.BackColor = Color.Green;
+            
             pbLogo.BackColor = Color.Green;
             pbLogo.Location = new Point(184, 10);
             pbLogo.ClientSize = new Size(421, 209);
+            pbLogo.Visible = !pbLogo.Visible;
         }
 
        public void CambiaVisibleAyuda()
@@ -80,19 +82,20 @@ namespace ProyectoTecnologiaInformatica
             lblAyudaPequeña.Visible = !lblAyudaPequeña.Visible;
             btnRegresar.Visible = !btnRegresar.Visible;
             pantallaAyuda = !pantallaAyuda;
+            
             pbLogo.BackColor = Color.BlueViolet;
             pbLogo.Location = new Point(280, 300);
             pbLogo.ClientSize = new Size(210, 104);
+            pbLogo.Visible = !pbLogo.Visible;
         }
 
         private void btnRegresar_Click(object sender, EventArgs e)
-        {
-            CambiaVisibleInicio();
+        {            
             if(pantallaJuego)
                 CambiaVisibleEscogerJuegos();
             if (pantallaAyuda)
                 CambiaVisibleAyuda();
-
+            CambiaVisibleInicio();
         }
 
         private void btnMemorama_Click(object sender, EventArgs e)
