@@ -38,7 +38,16 @@ namespace ProyectoTecnologiaInformatica
             this.lbTiempo = new System.Windows.Forms.Label();
             this.pbAqui = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.txtTiempo = new System.Windows.Forms.TextBox();
+            this.pBimg1 = new System.Windows.Forms.PictureBox();
+            this.pBimg2 = new System.Windows.Forms.PictureBox();
+            this.pBimg3 = new System.Windows.Forms.PictureBox();
+            this.lblResultado = new System.Windows.Forms.Label();
+            this.txtBoxPuntos = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbAqui)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBimg1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBimg2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBimg3)).BeginInit();
             this.SuspendLayout();
             // 
             // lbAqui
@@ -121,12 +130,85 @@ namespace ProyectoTecnologiaInformatica
             this.pbAqui.TabIndex = 20;
             this.pbAqui.TabStop = false;
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // txtTiempo
+            // 
+            this.txtTiempo.Location = new System.Drawing.Point(111, 17);
+            this.txtTiempo.Name = "txtTiempo";
+            this.txtTiempo.ReadOnly = true;
+            this.txtTiempo.Size = new System.Drawing.Size(25, 23);
+            this.txtTiempo.TabIndex = 21;
+            this.txtTiempo.Visible = false;
+            // 
+            // pBimg1
+            // 
+            this.pBimg1.Location = new System.Drawing.Point(122, 187);
+            this.pBimg1.Name = "pBimg1";
+            this.pBimg1.Size = new System.Drawing.Size(133, 123);
+            this.pBimg1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pBimg1.TabIndex = 22;
+            this.pBimg1.TabStop = false;
+            this.pBimg1.Visible = false;
+            this.pBimg1.Click += new System.EventHandler(this.pBimg1_Click);
+            // 
+            // pBimg2
+            // 
+            this.pBimg2.Location = new System.Drawing.Point(344, 187);
+            this.pBimg2.Name = "pBimg2";
+            this.pBimg2.Size = new System.Drawing.Size(133, 123);
+            this.pBimg2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pBimg2.TabIndex = 23;
+            this.pBimg2.TabStop = false;
+            this.pBimg2.Visible = false;
+            this.pBimg2.Click += new System.EventHandler(this.pBimg2_Click);
+            // 
+            // pBimg3
+            // 
+            this.pBimg3.Location = new System.Drawing.Point(564, 187);
+            this.pBimg3.Name = "pBimg3";
+            this.pBimg3.Size = new System.Drawing.Size(133, 123);
+            this.pBimg3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pBimg3.TabIndex = 24;
+            this.pBimg3.TabStop = false;
+            this.pBimg3.Visible = false;
+            this.pBimg3.Click += new System.EventHandler(this.pBimg3_Click);
+            // 
+            // lblResultado
+            // 
+            this.lblResultado.AutoSize = true;
+            this.lblResultado.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblResultado.Location = new System.Drawing.Point(355, 319);
+            this.lblResultado.Name = "lblResultado";
+            this.lblResultado.Size = new System.Drawing.Size(109, 46);
+            this.lblResultado.TabIndex = 25;
+            this.lblResultado.Text = "label1";
+            this.lblResultado.Visible = false;
+            // 
+            // txtBoxPuntos
+            // 
+            this.txtBoxPuntos.Location = new System.Drawing.Point(745, 18);
+            this.txtBoxPuntos.Name = "txtBoxPuntos";
+            this.txtBoxPuntos.ReadOnly = true;
+            this.txtBoxPuntos.Size = new System.Drawing.Size(43, 23);
+            this.txtBoxPuntos.TabIndex = 26;
+            this.txtBoxPuntos.Visible = false;
+            // 
             // AquiNoVa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtBoxPuntos);
+            this.Controls.Add(this.lblResultado);
+            this.Controls.Add(this.pBimg3);
+            this.Controls.Add(this.pBimg2);
+            this.Controls.Add(this.pBimg1);
+            this.Controls.Add(this.txtTiempo);
             this.Controls.Add(this.pbAqui);
             this.Controls.Add(this.lbPuntos);
             this.Controls.Add(this.lbTiempo);
@@ -137,6 +219,9 @@ namespace ProyectoTecnologiaInformatica
             this.Name = "AquiNoVa";
             this.Text = "AquiNoVa";
             ((System.ComponentModel.ISupportInitialize)(this.pbAqui)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBimg1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBimg2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBimg3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -152,5 +237,11 @@ namespace ProyectoTecnologiaInformatica
         private System.Windows.Forms.Label lbTiempo;
         private System.Windows.Forms.PictureBox pbAqui;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.TextBox txtTiempo;
+        private System.Windows.Forms.PictureBox pBimg1;
+        private System.Windows.Forms.PictureBox pBimg2;
+        private System.Windows.Forms.PictureBox pBimg3;
+        private System.Windows.Forms.Label lblResultado;
+        private System.Windows.Forms.TextBox txtBoxPuntos;
     }
 }
