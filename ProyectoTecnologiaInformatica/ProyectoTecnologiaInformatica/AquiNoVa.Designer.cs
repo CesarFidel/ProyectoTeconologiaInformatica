@@ -44,10 +44,12 @@ namespace ProyectoTecnologiaInformatica
             this.pBimg3 = new System.Windows.Forms.PictureBox();
             this.lblResultado = new System.Windows.Forms.Label();
             this.txtBoxPuntos = new System.Windows.Forms.TextBox();
+            this.pbTrofeo = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbAqui)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBimg1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBimg2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBimg3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbTrofeo)).BeginInit();
             this.SuspendLayout();
             // 
             // lbAqui
@@ -103,9 +105,9 @@ namespace ProyectoTecnologiaInformatica
             this.lbPuntos.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lbPuntos.Location = new System.Drawing.Point(665, 18);
             this.lbPuntos.Name = "lbPuntos";
-            this.lbPuntos.Size = new System.Drawing.Size(74, 22);
+            this.lbPuntos.Size = new System.Drawing.Size(79, 22);
             this.lbPuntos.TabIndex = 19;
-            this.lbPuntos.Text = "Puntos:";
+            this.lbPuntos.Text = "Puntos: ";
             this.lbPuntos.Visible = false;
             // 
             // lbTiempo
@@ -115,9 +117,9 @@ namespace ProyectoTecnologiaInformatica
             this.lbTiempo.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lbTiempo.Location = new System.Drawing.Point(27, 18);
             this.lbTiempo.Name = "lbTiempo";
-            this.lbTiempo.Size = new System.Drawing.Size(79, 22);
+            this.lbTiempo.Size = new System.Drawing.Size(84, 22);
             this.lbTiempo.TabIndex = 18;
-            this.lbTiempo.Text = "Tiempo:";
+            this.lbTiempo.Text = "Tiempo: ";
             this.lbTiempo.Visible = false;
             // 
             // pbAqui
@@ -180,10 +182,11 @@ namespace ProyectoTecnologiaInformatica
             // lblResultado
             // 
             this.lblResultado.AutoSize = true;
-            this.lblResultado.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblResultado.Location = new System.Drawing.Point(355, 319);
+            this.lblResultado.Font = new System.Drawing.Font("Segoe UI", 24.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblResultado.ForeColor = System.Drawing.Color.DarkRed;
+            this.lblResultado.Location = new System.Drawing.Point(322, 319);
             this.lblResultado.Name = "lblResultado";
-            this.lblResultado.Size = new System.Drawing.Size(109, 46);
+            this.lblResultado.Size = new System.Drawing.Size(107, 45);
             this.lblResultado.TabIndex = 25;
             this.lblResultado.Text = "label1";
             this.lblResultado.Visible = false;
@@ -197,12 +200,24 @@ namespace ProyectoTecnologiaInformatica
             this.txtBoxPuntos.TabIndex = 26;
             this.txtBoxPuntos.Visible = false;
             // 
+            // pbTrofeo
+            // 
+            this.pbTrofeo.Image = global::ProyectoTecnologiaInformatica.Properties.Resources.trofeo;
+            this.pbTrofeo.Location = new System.Drawing.Point(585, 277);
+            this.pbTrofeo.Name = "pbTrofeo";
+            this.pbTrofeo.Size = new System.Drawing.Size(159, 159);
+            this.pbTrofeo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pbTrofeo.TabIndex = 27;
+            this.pbTrofeo.TabStop = false;
+            this.pbTrofeo.Visible = false;
+            // 
             // AquiNoVa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pbTrofeo);
             this.Controls.Add(this.txtBoxPuntos);
             this.Controls.Add(this.lblResultado);
             this.Controls.Add(this.pBimg3);
@@ -222,6 +237,7 @@ namespace ProyectoTecnologiaInformatica
             ((System.ComponentModel.ISupportInitialize)(this.pBimg1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBimg2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBimg3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbTrofeo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -243,5 +259,6 @@ namespace ProyectoTecnologiaInformatica
         private System.Windows.Forms.PictureBox pBimg3;
         private System.Windows.Forms.Label lblResultado;
         private System.Windows.Forms.TextBox txtBoxPuntos;
+        private System.Windows.Forms.PictureBox pbTrofeo;
     }
 }

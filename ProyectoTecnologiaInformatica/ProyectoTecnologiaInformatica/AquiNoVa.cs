@@ -241,7 +241,7 @@ namespace ProyectoTecnologiaInformatica
             else
             {
                 lblResultado.Visible = true;
-                lblResultado.Text = "Incorrecto";
+                lblResultado.Text = "Incorrecto";                
                 puntuacion -= 100;
                 txtBoxPuntos.Text = puntuacion.ToString();
             }
@@ -250,10 +250,24 @@ namespace ProyectoTecnologiaInformatica
 
         public void finalizaJuego()
         {
+            txtTiempo.Visible = false;
+            txtBoxPuntos.Visible = false;
+            lbTiempo.Text = "Tiempo Total: " + segundosTotal.ToString();
+            lbPuntos.Text = lbPuntos.Text + (puntuacion - segundosTotal * 10).ToString();
+            lbAqui.Visible = false;
+            pbAqui.Visible = true;
+            pbAqui.Image = Properties.Resources.winAqui;
+            pbAqui.SizeMode = PictureBoxSizeMode.AutoSize;
+            pbAqui.Location = new Point(0, 10);
             cambiaVisibleImagenes();
-            lblResultado.Text = "Felicidades ganaste\nPuntuación final: " + (puntuacion - segundosTotal * 10).ToString();
+            lblResultado.Location = new Point(50, 290);
+            pbTrofeo.Visible = true;
+            lblResultado.ForeColor = Color.Black;
+            lblResultado.Text = "Haz Realizado ¡Aquí No Va!";//"Felicidades ganaste\nPuntuación final: " + (puntuacion - segundosTotal * 10).ToString();
             txtBoxPuntos.Text = puntuacion.ToString();           
             lblResultado.Visible = true;
+            lbTiempo.Location = new Point(150, 350);
+            lbPuntos.Location = new Point(150, 390);
         }
     }
 }

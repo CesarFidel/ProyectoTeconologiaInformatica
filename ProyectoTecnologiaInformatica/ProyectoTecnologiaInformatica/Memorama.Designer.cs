@@ -29,6 +29,7 @@ namespace ProyectoTecnologiaInformatica
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lbTitulo = new System.Windows.Forms.Label();
             this.lbInstrucciones = new System.Windows.Forms.Label();
             this.btnComenzar = new System.Windows.Forms.Button();
@@ -37,6 +38,11 @@ namespace ProyectoTecnologiaInformatica
             this.pbMemo2 = new System.Windows.Forms.PictureBox();
             this.lbTiempo = new System.Windows.Forms.Label();
             this.lbPares = new System.Windows.Forms.Label();
+            this.panelMemo = new System.Windows.Forms.Panel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.tiempo = new System.Windows.Forms.Timer(this.components);
+            this.cbNumeroPares = new System.Windows.Forms.ComboBox();
+            this.lbCartas = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbMemo1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMemo2)).BeginInit();
             this.SuspendLayout();
@@ -132,12 +138,54 @@ namespace ProyectoTecnologiaInformatica
             this.lbPares.Text = "Pares:";
             this.lbPares.Visible = false;
             // 
+            // panelMemo
+            // 
+            this.panelMemo.Location = new System.Drawing.Point(62, 66);
+            this.panelMemo.Name = "panelMemo";
+            this.panelMemo.Size = new System.Drawing.Size(674, 338);
+            this.panelMemo.TabIndex = 18;
+            this.panelMemo.Visible = false;
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 500;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // tiempo
+            // 
+            this.tiempo.Interval = 1000;
+            this.tiempo.Tick += new System.EventHandler(this.tiempo_Tick);
+            // 
+            // cbNumeroPares
+            // 
+            this.cbNumeroPares.FormattingEnabled = true;
+            this.cbNumeroPares.Items.AddRange(new object[] {
+            "6",
+            "10"});
+            this.cbNumeroPares.Location = new System.Drawing.Point(436, 339);
+            this.cbNumeroPares.Name = "cbNumeroPares";
+            this.cbNumeroPares.Size = new System.Drawing.Size(114, 23);
+            this.cbNumeroPares.TabIndex = 19;
+            this.cbNumeroPares.SelectedIndexChanged += new System.EventHandler(this.cbNumeroPares_SelectedIndexChanged);
+            // 
+            // lbCartas
+            // 
+            this.lbCartas.AutoSize = true;
+            this.lbCartas.Location = new System.Drawing.Point(253, 342);
+            this.lbCartas.Name = "lbCartas";
+            this.lbCartas.Size = new System.Drawing.Size(177, 15);
+            this.lbCartas.TabIndex = 20;
+            this.lbCartas.Text = "Selecciona el Numero de Cartas:";
+            // 
             // Memorama
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Aqua;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lbCartas);
+            this.Controls.Add(this.cbNumeroPares);
+            this.Controls.Add(this.panelMemo);
             this.Controls.Add(this.lbPares);
             this.Controls.Add(this.lbTiempo);
             this.Controls.Add(this.pbMemo2);
@@ -165,5 +213,10 @@ namespace ProyectoTecnologiaInformatica
         private System.Windows.Forms.PictureBox pbMemo2;
         private System.Windows.Forms.Label lbTiempo;
         private System.Windows.Forms.Label lbPares;
+        private System.Windows.Forms.Panel panelMemo;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer tiempo;
+        private System.Windows.Forms.ComboBox cbNumeroPares;
+        private System.Windows.Forms.Label lbCartas;
     }
 }

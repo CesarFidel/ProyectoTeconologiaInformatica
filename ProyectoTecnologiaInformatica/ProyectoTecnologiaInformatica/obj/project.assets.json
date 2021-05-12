@@ -8,23 +8,28 @@
     "net5.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Cesar\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\Juan Antonio\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Escritorio\\Universidad\\Informatica\\ProyectoTeconologiaInformatica\\ProyectoTecnologiaInformatica\\ProyectoTecnologiaInformatica\\ProyectoTecnologiaInformatica.csproj",
+      "projectUniqueName": "C:\\Users\\Juan Antonio\\Desktop\\ProyectoTeconologiaInformatica\\ProyectoTecnologiaInformatica\\ProyectoTecnologiaInformatica\\ProyectoTecnologiaInformatica.csproj",
       "projectName": "ProyectoTecnologiaInformatica",
-      "projectPath": "D:\\Escritorio\\Universidad\\Informatica\\ProyectoTeconologiaInformatica\\ProyectoTecnologiaInformatica\\ProyectoTecnologiaInformatica\\ProyectoTecnologiaInformatica.csproj",
-      "packagesPath": "C:\\Users\\Cesar\\.nuget\\packages\\",
-      "outputPath": "D:\\Escritorio\\Universidad\\Informatica\\ProyectoTeconologiaInformatica\\ProyectoTecnologiaInformatica\\ProyectoTecnologiaInformatica\\obj\\",
+      "projectPath": "C:\\Users\\Juan Antonio\\Desktop\\ProyectoTeconologiaInformatica\\ProyectoTecnologiaInformatica\\ProyectoTecnologiaInformatica\\ProyectoTecnologiaInformatica.csproj",
+      "packagesPath": "C:\\Users\\Juan Antonio\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Juan Antonio\\Desktop\\ProyectoTeconologiaInformatica\\ProyectoTecnologiaInformatica\\ProyectoTecnologiaInformatica\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Cesar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Juan Antonio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
