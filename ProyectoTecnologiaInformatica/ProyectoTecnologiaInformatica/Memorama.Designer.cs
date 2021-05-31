@@ -84,7 +84,7 @@ namespace ProyectoTecnologiaInformatica
             // 
             // pbMemo1
             // 
-            this.pbMemo1.BackColor = System.Drawing.Color.Aqua;
+            this.pbMemo1.BackColor = System.Drawing.Color.MediumTurquoise;
             this.pbMemo1.Image = global::ProyectoTecnologiaInformatica.Properties.Resources.Memo;
             this.pbMemo1.Location = new System.Drawing.Point(214, 66);
             this.pbMemo1.Name = "pbMemo1";
@@ -105,7 +105,7 @@ namespace ProyectoTecnologiaInformatica
             // 
             // pbMemo2
             // 
-            this.pbMemo2.BackColor = System.Drawing.Color.Aqua;
+            this.pbMemo2.BackColor = System.Drawing.Color.MediumTurquoise;
             this.pbMemo2.Image = global::ProyectoTecnologiaInformatica.Properties.Resources.Memo;
             this.pbMemo2.Location = new System.Drawing.Point(510, 66);
             this.pbMemo2.Name = "pbMemo2";
@@ -181,7 +181,7 @@ namespace ProyectoTecnologiaInformatica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Aqua;
+            this.BackColor = System.Drawing.Color.MediumTurquoise;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.lbCartas);
             this.Controls.Add(this.cbNumeroPares);

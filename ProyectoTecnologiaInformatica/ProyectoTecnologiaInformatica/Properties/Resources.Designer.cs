@@ -83,6 +83,36 @@ namespace ProyectoTecnologiaInformatica.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Donde1 {
+            get {
+                object obj = ResourceManager.GetObject("Donde1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Donde2 {
+            get {
+                object obj = ResourceManager.GetObject("Donde2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Donde3 {
+            get {
+                object obj = ResourceManager.GetObject("Donde3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Fondo {
             get {
                 object obj = ResourceManager.GetObject("Fondo", resourceCulture);
@@ -256,6 +286,16 @@ namespace ProyectoTecnologiaInformatica.Properties {
         internal static System.Drawing.Bitmap winAqui1 {
             get {
                 object obj = ResourceManager.GetObject("winAqui1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap winDonde {
+            get {
+                object obj = ResourceManager.GetObject("winDonde", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

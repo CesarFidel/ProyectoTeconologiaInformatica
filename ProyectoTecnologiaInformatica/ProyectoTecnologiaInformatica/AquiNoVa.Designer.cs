@@ -215,7 +215,7 @@ namespace ProyectoTecnologiaInformatica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.BackColor = System.Drawing.Color.HotPink;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.pbTrofeo);
             this.Controls.Add(this.txtBoxPuntos);

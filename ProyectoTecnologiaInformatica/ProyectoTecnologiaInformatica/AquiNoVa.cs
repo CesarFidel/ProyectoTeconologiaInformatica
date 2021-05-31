@@ -33,8 +33,8 @@ namespace ProyectoTecnologiaInformatica
                 "+ Tendrás que encontrarla y seleccionarla.\n" +
                 "+ Seleccionas la figura y si aciertas avanzas y si te equivocas regresaras a\n" +
                 "ver las figuras.\n" +
-                "+ Al final seras el ganador cuando consigas encontrar todos las figuras\n" +
-                "diferente.\n";
+                "+ Al final seras el ganador cuando consigas encontrar todas las figuras\n" +
+                "diferentes.\n";
             txtBoxPuntos.Text = puntuacion.ToString();
             txtTiempo.Text = "00";
         }
