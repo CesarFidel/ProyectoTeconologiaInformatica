@@ -211,13 +211,15 @@ namespace ProyectoTecnologiaInformatica
             }
         }
 
-        private void pBimg1_Click(object sender, EventArgs e)
+        private async void pBimg1_Click(object sender, EventArgs e)
         {
             pBimg1.Image = pb1;
 
             if (imgCorrecta == 1)
             {
                 lblResultado.Visible = true;
+                lblResultado.Text = "Correcto";
+                await Task.Delay(1500);
                 pBimg1.Image = pb1;
                 correcto = true;
                 oSW.Stop();
@@ -240,13 +242,15 @@ namespace ProyectoTecnologiaInformatica
             }
         }
 
-        private void pBimg2_Click(object sender, EventArgs e)
+        private async void pBimg2_Click(object sender, EventArgs e)
         {
             pBimg2.Image = pb2;
             oSW.Start();
             if (imgCorrecta == 2)
             {
                 lblResultado.Visible = true;
+                lblResultado.Text = "Correcto";
+                await Task.Delay(1500);
                 pBimg2.Image = pb2;
                 correcto = true;
                 oSW.Stop();
@@ -269,12 +273,14 @@ namespace ProyectoTecnologiaInformatica
             }
         }
 
-        private void pBimg3_Click(object sender, EventArgs e)
+        private async void pBimg3_Click(object sender, EventArgs e)
         {
             pBimg3.Image = pb3;
             if (imgCorrecta == 3)
             {
                 lblResultado.Visible = true;
+                lblResultado.Text = "Correcto";
+                await Task.Delay(1500);
                 pBimg3.Image = pb3;
                 correcto = true;
                 oSW.Stop();
