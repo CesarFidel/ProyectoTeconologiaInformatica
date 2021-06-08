@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
+using System.Threading;
 
 namespace ProyectoTecnologiaInformatica
 {
@@ -169,15 +170,15 @@ namespace ProyectoTecnologiaInformatica
             }
         }
 
-        private void pBimg1_Click(object sender, EventArgs e)
+        private async void pBimg1_Click(object sender, EventArgs e)
         {
             if (imgMal == 1)
             {
                 lblResultado.Visible = true;
                 lblResultado.Text = "Correcto";
-                nivelActual++;                
-                Task.Delay(1500);
+                await Task.Delay(1500);
                 lblResultado.Visible = false;
+                nivelActual++;
                 cargaNivel(nivelActual);
                 reiniciaCronometro();
                 iniciaCronometro();
@@ -195,15 +196,15 @@ namespace ProyectoTecnologiaInformatica
             }
         }
 
-        private void pBimg2_Click(object sender, EventArgs e)
+        private async void pBimg2_Click(object sender, EventArgs e)
         {
             if (imgMal == 2)
             {
                 lblResultado.Visible = true;
                 lblResultado.Text = "Correcto";
-                nivelActual++;                
-                Task.Delay(1500);
+                await Task.Delay(1500);
                 lblResultado.Visible = false;
+                nivelActual++;
                 cargaNivel(nivelActual);
                 reiniciaCronometro();
                 iniciaCronometro();
@@ -221,15 +222,15 @@ namespace ProyectoTecnologiaInformatica
             }
         }
 
-        private void pBimg3_Click(object sender, EventArgs e)
+        private async void pBimg3_Click(object sender, EventArgs e)
         {
             if (imgMal == 3)
             {
                 lblResultado.Visible = true;
                 lblResultado.Text = "Correcto";
-                nivelActual++;
-                Task.Delay(1500);                
+                await Task.Delay(1500);
                 lblResultado.Visible = false;
+                nivelActual++;
                 cargaNivel(nivelActual);
                 reiniciaCronometro();
                 iniciaCronometro();
