@@ -64,7 +64,7 @@ namespace ProyectoTecnologiaInformatica
             TimeSpan ts = new TimeSpan(0, 0, 0, 0, (int)oSW.ElapsedMilliseconds);
             lbTiempo.Text = "Tiempo: " + (ts.Seconds.ToString().Length < 2 ? "0" + ts.Seconds.ToString() : ts.Seconds.ToString());
             segTotal = ts.Seconds;
-            if (tiempoVer > 4 && correcto == false)
+            if (tiempoVer > 3 && correcto == false)
             {
                 pBMuestra.Visible = true;
                 pBimg1.Image = Image.FromFile("Tar2.png");
@@ -219,14 +219,14 @@ namespace ProyectoTecnologiaInformatica
             {
                 lblResultado.Visible = true;
                 lblResultado.Text = "Correcto";
-                await Task.Delay(1500);
                 pBimg1.Image = pb1;
                 correcto = true;
+                await Task.Delay(2500);
                 oSW.Stop();
                 nivelActual++;
                 lblResultado.Text = "Nivel " + nivelActual;
-                tiempoVer = 0;
                 cargaNivel(nivelActual);
+                tiempoVer = 0;
                 if (nivelActual == 4)
                 {
                     timer1.Stop();
@@ -239,6 +239,7 @@ namespace ProyectoTecnologiaInformatica
                 lblResultado.Text = "Incorrecto";
                 puntuacion -= 100;
                 lbPuntos.Text = "Puntos: " + puntuacion.ToString();
+                await Task.Delay(3500);
             }
         }
 
@@ -250,14 +251,14 @@ namespace ProyectoTecnologiaInformatica
             {
                 lblResultado.Visible = true;
                 lblResultado.Text = "Correcto";
-                await Task.Delay(1500);
                 pBimg2.Image = pb2;
                 correcto = true;
+                await Task.Delay(2500);
                 oSW.Stop();
                 nivelActual++;
                 lblResultado.Text = "Nivel " + nivelActual;
-                tiempoVer = 0;
                 cargaNivel(nivelActual);
+                tiempoVer = 0;
                 if (nivelActual == 4)
                 {
                     timer1.Stop();
@@ -270,6 +271,7 @@ namespace ProyectoTecnologiaInformatica
                 lblResultado.Text = "Incorrecto";
                 puntuacion -= 100;
                 lbPuntos.Text = "Puntos: " + puntuacion.ToString();
+                await Task.Delay(3500);
             }
         }
 
@@ -280,14 +282,14 @@ namespace ProyectoTecnologiaInformatica
             {
                 lblResultado.Visible = true;
                 lblResultado.Text = "Correcto";
-                await Task.Delay(1500);
                 pBimg3.Image = pb3;
                 correcto = true;
+                await Task.Delay(2500);
                 oSW.Stop();
                 nivelActual++;
                 lblResultado.Text = "Nivel " + nivelActual;
-                tiempoVer = 0;
                 cargaNivel(nivelActual);
+                tiempoVer = 0;
                 if (nivelActual == 4)
                 {
                     timer1.Stop();
@@ -300,6 +302,7 @@ namespace ProyectoTecnologiaInformatica
                 lblResultado.Text = "Incorrecto";
                 puntuacion -= 100;
                 lbPuntos.Text = "Puntos: " + puntuacion.ToString();
+                await Task.Delay(3500);
             }
         }
 
